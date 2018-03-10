@@ -101,12 +101,14 @@ express()
   })
   .get('/postage',
     function (req, res) {
-      var typeOfMail = req.param('typeOfMail')
+      var typeOfMail = req.param('typeOfMail');
       var weight = req.param('weight');
+      var rate = getRate(weight, typeOfMail);
 
       res.render('pages/postage', {
           typeOfMail: typeOfMail,
-          weight: weight
+          weight: weight,
+          rate: rate
       });
   })
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
