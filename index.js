@@ -104,7 +104,7 @@ express()
       var typeOfMail = req.param('typeOfMail');
       var weight = req.param('weight');
       var rate = getRate(weight, typeOfMail);
-
+      console.log('type of mail: ' + typeOfMail + ' weight: ' + weight + ' rate: ' + rate);
       res.render('pages/postage', {
           typeOfMail: typeOfMail,
           weight: weight,
