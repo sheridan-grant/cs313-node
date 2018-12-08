@@ -2,7 +2,7 @@
   "name": "Start on Heroku: Node.js",
   "description": "A barebones Node.js app using Express 4",
   "repository": "https://github.com/sheridan-grant/cs313-node",
-  "logo": "https://cdn.rawgit.com/sheridan-grant/cs313-node/master/public/node.svg",
+  "logo": "https://cdn.jsdelivr.net/gh/sheridan-grant/cs313-node/public/node.svg",
   "keywords": ["node", "express", "heroku"],
   "image": "heroku/nodejs"
 }
